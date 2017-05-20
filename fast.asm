@@ -44,7 +44,7 @@ tekst	dm	"F/S/L/V ROUTINES INSTALLED"
 	db	118
 	db	"VERIFY: RAND USR 32075"
 	db	118,118
-	db	"(C) JACK RAATS"
+	db	"(C)2017 JACK RAATS"
 	db	118,255
 savecod	equ	$
 

@@ -5,7 +5,7 @@
 ; van Nispenstraat 7
 ; 4651 XH Steenbergen
 
-		org	30000
+			org		30000
 
 #define		set_fast	$02ef
 #define		ls_update	$01fc
@@ -13,18 +13,18 @@
 #define		progr		$407d
 
 save		call	set_fast
-		ld	hl,versn-1
-		ld	c,0
-leader		ld	de,$1950
-		call	pulses
-		ld	b,$14
-		dec	c
-		jr	nz,leader
+			ld		hl,versn-1
+			ld		c,0
+leader		ld		de,$1950
+			call	pulses
+			ld	b,$14
+			dec	c
+			jr	nz,leader
 st_bit		call	ls_update
-		ld	b,$0b
-		ld	a,(hl)
-		scf
-		jr	one_bit
+			ld	b,$0b
+			ld	a,(hl)
+			scf
+			jr	one_bit
 each_bit	ld	b,$11
 		jr	c,zero_one
 zero_bit	ld	de,$1900
